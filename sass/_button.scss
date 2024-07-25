@@ -1,0 +1,14 @@
+.btn {
+    background-color: black;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--main_coloor) ;
+    box-shadow: 3px 3px 0 #00000048;
+    font-family: var(--main_font);
+    &:hover{
+        background-color: red;
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.341);
+
+    }
+  }

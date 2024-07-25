@@ -1,0 +1,114 @@
+header {
+    font-size: 16px;
+    font-weight: 700;
+  height: 100px;
+  background-color: #f7ede8;
+  .header_conteiner {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    .navigations {
+      align-items: center;
+      display: flex;
+      gap: 30px;
+      .logo {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+ul {
+  display: flex;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  li {
+    display: block;
+    position: relative;
+    float: left;
+  }
+}
+
+li ul {
+  display: none;
+}
+ul li a {
+  display: flex;
+  padding: 5px 15px 5px 15px;
+  white-space: nowrap;
+  transition: .2s;
+  img{
+    margin-left: 10px;
+  }
+}
+ul li a:hover {
+    border-radius: 5px;
+  background: white;
+}
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+li:hover a {
+  background: var(--main_coloor);
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.341);
+   
+}
+
+li:hover li a:hover {
+  background: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  .btn {
+    background-color: black;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--main_coloor) ;
+    box-shadow: 3px 3px 0 #00000048;
+    font-family: var(--main_font);
+    &:hover{
+        background-color: red;
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.341);
+
+    }
+  }
+  .light{
+    background-color: var(--main_coloor);
+    color: black;
+    box-shadow: none;
+    border: solid 2px black;
+    &:hover{
+        background-color: white;
+
+    }
+  }
+}
+.popover{
+    margin: auto;
+    form{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: var(--main_coloor);
+        input{
+            padding: 10px;
+            border: none;
+            background-color: var(--main_coloor);
+            border-bottom: 1px solid black;
+        }
+    }
+}

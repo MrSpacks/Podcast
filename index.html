@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Podcast</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_conteiner">
+        <nav class="navigations">
+          <img class="logo" src="./assets/images/logo.png" alt="logo" />
+          <ul>
+            <li class="nav_items"><a href="">Episodes</a></li>
+            <li class="nav_items"><a href="./pages/about.html">About</a></li>
+            <li class="nav_items more">
+              <a href=""
+                >More <img src="./assets/icons/Arrow - Down.png" alt="arrow"
+              /></a>
+              <ul>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/ditail.html">Detail</a></li>
+                <li><a href="./pages/single_blog.html">Single blog</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="buttons">
+          <a id="Episodes" class="btn light">RECENT EPISODES</a>
+          <button class="btn" popovertarget="SUBSCRIBE">SUBSCRIBE</button>
+        </div>
+      </div>
+      <!-- popover -->
+      <div class="popover" popover id="SUBSCRIBE">
+        <form action="">
+          <h2 class="form_title">SUBSCRIBE</h2>
+          <label for="name">Enter your name:</label>
+          <input placeholder="Your name:" type="text" name="name" id="name" />
+          <label for="email">Enter your e-mail:</label>
+          <input
+            placeholder="Your e-mail:"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <button class="btn" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <div class="footer_conteiner">
+        <div class="footer_content">
+          <!-- social links -->
+          <ul class="social_links">
+            <li>
+              <img src="./assets/images/logo.png" alt="logo" />
+              <p>©2021.</p>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit.
+            </li>
+            <li>
+              <ul class="social_icons">
+                <li><img src="./assets/icons/twitter.png" alt="twitter" /></li>
+                <li>
+                  <img src="./assets/icons/instagram.png" alt="instagram" />
+                </li>
+                <li><img src="./assets/icons/tiktok.png" alt="tiktok" /></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- local links -->
+          <div class="local_links">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Testimonials</a></li>
+              <li><a href="">Features</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Episodes</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_subtitle">
+          <p>
+            ©2022. All Rights Reserved.
+            <span style="color: red">Pod of Cast</span>
+          </p>
+          <p>Terms • Privacy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
