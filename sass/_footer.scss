@@ -92,6 +92,9 @@ hr {
   flex-direction: column;
   gap: 10px;
 }
+.platform_icon{
+  width: 100%;
+}
 }
 @media (max-width: 320px) {
   .footer_apps .footer_platforms .platforms {
@@ -99,8 +102,5 @@ hr {
     .platform_title {
     margin-bottom: 10px;
 }
-}
-.platform_icon{
-  width: 30%;
 }
 }
