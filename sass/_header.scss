@@ -117,6 +117,9 @@ header {
 }
 
 // burger menu
+.burger_menu {
+  display: none;
+}
 .navbar {
   width: 100%;
   // box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
@@ -239,11 +242,16 @@ header {
   transform: rotate(-45deg);
 }
 
-
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
+  .burger_menu {
+    display: flex;
+  }
   .nav_items {
+    display: none;
+  }
+  .buttons{
     display: none;
   }
 }

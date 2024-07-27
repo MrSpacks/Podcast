@@ -138,6 +138,10 @@ header .header_conteiner .header_nav .logo {
   border-bottom: 1px solid black;
 }
 
+.burger_menu {
+  display: none;
+}
+
 .navbar {
   width: 100%;
 }
@@ -297,7 +301,15 @@ header .header_conteiner .header_nav .logo {
 }
 
 @media (max-width: 768px) {
+  .burger_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .nav_items {
+    display: none;
+  }
+  .buttons {
     display: none;
   }
 }
