@@ -1,0 +1,117 @@
+.head_conteiner{
+    background-color: var(--main_coloor);
+  font-family: "Montserrat Alternates", sans-serif;
+    position: relative;
+}
+.head_items{
+     display: flex;
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+        align-items: center;
+
+}
+.head_title{
+    font-size: 96px;
+    font-weight: 700;
+}
+.head_subtitle{
+    font-weight: 500;
+    font-size: 16px;
+}
+.head_img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+.swirl{
+    left: 0;
+}
+.stars{
+    right: 20px;
+}
+// slider stiles
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  --slider-padding: 1rem;
+  --slider-column-gap: 1rem;
+  --slide-width: 25%;
+  --slide-min-width: 15rem;
+
+  position: relative;
+  overflow: hidden;
+
+  &__track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--slider-padding);
+    scroll-behavior: smooth;
+
+    list-style-type: none;
+    padding: 0;
+    margin-right: calc(var(--slider-column-gap) * -1);
+
+    > * {
+      flex: 0 0 var(--slide-width);
+      min-width: var(--slide-min-width);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding-right: var(--slider-column-gap);
+    }
+
+    // hide scrollbar
+    scrollbar-width: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    margin-top: 1rem;
+    
+    [disabled] {
+      opacity: .5;
+    }
+  }
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  background: #6c5ce7;
+  color: #a29bfe;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slider_conteineer {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// adaptive
+@media (max-width: 1024px) {
+    .head_img{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+ 
+ .head_title{
+    font-size: 50px;
+}
+}
+@media (max-width: 320px) {
+ .head_title{
+    font-size: 25qpx;
+}}

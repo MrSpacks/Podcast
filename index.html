@@ -92,14 +92,66 @@
     </header>
 
     <main>
-      <div class="conteiner head_conteiner">
-        <h2 class="head_title">
-          Your Daily <br /><span style="color: red">Podcast</span>
-        </h2>
-        <p class="head_subtitle">
-          We cover all kinds of categories and a weekly special guest.
-        </p>
-        <button class="btn" popovertarget="SUBSCRIBE">SUBSCRIBE</button>
+      <!-- head -->
+      <div class="head_conteiner">
+        <div class="conteiner">
+          <div class="head_items">
+            <h2 class="head_title">
+              Your Daily <br /><span style="color: red">Podcast</span>
+            </h2>
+            <p class="head_subtitle">
+              We cover all kinds of categories <br />
+              and a weekly special guest.
+            </p>
+            <button class="btn" popovertarget="SUBSCRIBE">SUBSCRIBE</button>
+          </div>
+          <img
+            class="head_img swirl"
+            src="./assets/images/Hero Shape Swirl.svg"
+            alt=""
+          />
+          <img
+            class="head_img stars"
+            src="./assets/images/Hero Shape Stars.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- slider -->
+      <div class="slider_conteineer">
+        <div class="slider" data-slider>
+          <ul class="slider__track" data-slider-track>
+            <li>
+              <div class="slide">1</div>
+            </li>
+            <li>
+              <div class="slide">2</div>
+            </li>
+            <li>
+              <div class="slide">3</div>
+            </li>
+            <li>
+              <div class="slide">4</div>
+            </li>
+            <li>
+              <div class="slide">5</div>
+            </li>
+            <li>
+              <div class="slide">6</div>
+            </li>
+            <li>
+              <div class="slide">7</div>
+            </li>
+          </ul>
+          <div class="slider__buttons">
+            <button class="slider__button" data-slider-prev disabled>
+              Previous
+            </button>
+            <button class="slider__button" data-slider-next>Next</button>
+          </div>
+        </div>
+
+        Resources
       </div>
     </main>
 
@@ -214,4 +266,5 @@
       </div>
     </footer>
   </body>
+  <script src="./App/slider.js"></script>
 </html>
