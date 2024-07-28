@@ -3,9 +3,9 @@
 @import "./footer";
 @import "./main-head";
 
-:root{
-    --main_coloor: #f7ede8;
-    --main_font: "Montserrat Alternates", sans-serif;
+:root {
+  --main_coloor: #f7ede8;
+  --main_font: "Montserrat Alternates", sans-serif;
 }
 * {
   padding: 0;
@@ -14,6 +14,7 @@
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;
+  overflow-x: hidden;
 }
 ul,
 li {
@@ -23,10 +24,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.conteiner{
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 20px;
-          box-sizing: border-box;
-          
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-y: hidden;
 }

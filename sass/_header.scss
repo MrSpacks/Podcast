@@ -119,6 +119,9 @@ header {
 // burger menu
 .burger_menu {
   display: none;
+  z-index: 1000;
+  position: absolute;
+  right: 20px;
 }
 .navbar {
   width: 100%;
@@ -218,6 +221,7 @@ header {
   padding: 120px 50px 0 30px;
   transition: transform 0.5s ease-in-out;
   // text-align: center;
+  z-index: 1;
 }
 
 .navbar .menu-items li {
@@ -251,7 +255,7 @@ header {
   .nav_items {
     display: none;
   }
-  .buttons{
+  .buttons {
     display: none;
   }
 }

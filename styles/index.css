@@ -140,6 +140,9 @@ header .header_conteiner .header_nav .logo {
 
 .burger_menu {
   display: none;
+  z-index: 1000;
+  position: absolute;
+  right: 20px;
 }
 
 .navbar {
@@ -272,6 +275,7 @@ header .header_conteiner .header_nav .logo {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .navbar .menu-items li {
@@ -646,6 +650,7 @@ hr {
 
 body {
   font-family: "Montserrat Alternates", sans-serif;
+  overflow-x: hidden;
 }
 
 ul,
@@ -664,4 +669,5 @@ a {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-y: hidden;
 }
