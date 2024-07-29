@@ -763,7 +763,6 @@ hr {
 
 body {
   font-family: "Montserrat Alternates", sans-serif;
-  overflow-x: hidden;
 }
 
 ul,
@@ -782,5 +781,4 @@ a {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: hidden;
 }
