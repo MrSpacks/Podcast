@@ -121,6 +121,7 @@
 .slider_conteineer {
   padding: 1rem;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .lines{
   background-color: black;
@@ -160,6 +161,10 @@
   position: relative;
 
 }
+.curl{
+  position: relative;
+  top: -60px;
+}
 .quote{
   background-color: var(--main_coloor);
   display: flex;
@@ -190,6 +195,13 @@
   gap: 10px;
   align-items: center;
   padding-bottom: 40px;
+}
+
+
+// testimonials_conteiner
+
+.testimonials_conteiner{
+  background-color: #EDF3F7;
 }
 // adaptive
 @media (max-width: 1024px) {

@@ -39,3 +39,5 @@ if (track) {
     }
   });
 }
+
+// slider 2

@@ -615,6 +615,7 @@ hr {
 .slider_conteineer {
   padding: 1rem;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .lines {
@@ -675,6 +676,11 @@ hr {
   position: relative;
 }
 
+.curl {
+  position: relative;
+  top: -60px;
+}
+
 .quote {
   background-color: var(--main_coloor);
   display: -webkit-box;
@@ -719,6 +725,10 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 40px;
+}
+
+.testimonials_conteiner {
+  background-color: #EDF3F7;
 }
 
 @media (max-width: 1024px) {
