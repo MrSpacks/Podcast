@@ -524,100 +524,6 @@ hr {
   right: 20px;
 }
 
-.slider_conteineer {
-  padding: 50px 0;
-  background-color: var(--main_coloor);
-}
-
-.slider {
-  padding: 50px 0;
-  background-color: var(--main_coloor);
-  --slider-padding: 1rem;
-  --slider-column-gap: 1rem;
-  --slide-width: 25%;
-  --slide-min-width: 15rem;
-  position: relative;
-  overflow: hidden;
-}
-.slider__track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  padding-inline: var(--slider-padding);
-  scroll-behavior: smooth;
-  list-style-type: none;
-  padding: 0;
-  margin-right: calc(var(--slider-column-gap) * -1);
-  scrollbar-width: none;
-}
-.slider__track > * {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 var(--slide-width);
-          flex: 0 0 var(--slide-width);
-  min-width: var(--slide-min-width);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  padding-right: var(--slider-column-gap);
-}
-.slider__track::-webkit-scrollbar {
-  display: none;
-}
-.slider__buttons {
-  margin-top: 1rem;
-}
-.slider__buttons [disabled] {
-  opacity: 0.5;
-}
-
-.slide {
-  max-width: 373px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 1rem;
-  color: #81ADC8;
-  font-size: 3rem;
-  font-weight: 700;
-  position: relative;
-  border-radius: 12px;
-}
-.slide .slide_bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-.slide .slide_icons {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.slide .slide_title {
-  z-index: 20;
-  font-size: 36px;
-  font-weight: 700;
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-}
-
-.slider_conteineer {
-  padding: 1rem;
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-
 .lines {
   background-color: black;
   width: 100%;
@@ -732,12 +638,12 @@ hr {
 }
 
 @media (max-width: 1024px) {
-  .head_img {
+  .head_img, .star, .vector {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .platforms, .line {
+  .platforms, .lines {
     display: none;
   }
   .head_title {
@@ -759,6 +665,99 @@ hr {
     font-size: 25px;
   }
 }
+.slider_conteineer {
+  padding: 50px 0;
+  background-color: var(--main_coloor);
+}
+
+.slider {
+  padding: 50px 0;
+  background-color: var(--main_coloor);
+  --slider-padding: 1rem;
+  --slider-column-gap: 1rem;
+  --slide-width: 25%;
+  --slide-min-width: 15rem;
+  position: relative;
+}
+.slider__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  padding-inline: var(--slider-padding);
+  scroll-behavior: smooth;
+  list-style-type: none;
+  padding: 0;
+  margin-right: calc(var(--slider-column-gap) * -1);
+  scrollbar-width: none;
+}
+.slider__track > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--slide-width);
+          flex: 0 0 var(--slide-width);
+  min-width: var(--slide-min-width);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding-right: var(--slider-column-gap);
+}
+.slider__track::-webkit-scrollbar {
+  display: none;
+}
+.slider__buttons {
+  margin-top: 1rem;
+}
+.slider__buttons [disabled] {
+  opacity: 0.5;
+}
+
+.slide {
+  max-width: 373px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  color: #81ADC8;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+  border-radius: 12px;
+}
+.slide .slide_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.slide .slide_icons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.slide .slide_title {
+  z-index: 20;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.slider_conteineer {
+  padding: 1rem;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 :root {
   --main_coloor: #f7ede8;
   --main_font: "Montserrat Alternates", sans-serif;
@@ -789,6 +788,4 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
