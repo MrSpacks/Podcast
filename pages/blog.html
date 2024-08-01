@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="conteiner">
-        <div class="header_conteiner">
+        <div class="header_conteiner" id="header_conteiner">
           <nav class="header_nav">
             <img class="logo" src="../assets/images/logo.png" alt="logo" />
             <ul class="nav_items">
@@ -38,10 +38,10 @@
             </ul>
           </nav>
           <div class="buttons">
-            <a id="Episodes" class="btn light">RECENT EPISODES</a>
+            <a href="../index.html" id="Episodes" class="btn light">HOME</a>
             <button class="btn" popovertarget="SUBSCRIBE">SUBSCRIBE</button>
           </div>
-           <!-- burger menu -->
+          <!-- burger menu -->
           <div class="burger_menu">
             <nav>
               <div class="navbar">
@@ -91,7 +91,117 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section>
+        <div class="head_conteiner">
+          <div class="conteiner">
+            <div class="head_items">
+              <h2 class="head_title">
+                Article <br />
+                and<span style="color: red">News</span>
+              </h2>
+              <p class="head_subtitle search_margin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
+                tempor incididunt <br />
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+              </p>
+              <input
+                class="search"
+                placeholder="&#128270; Search..."
+                type="search"
+              />
+            </div>
+            <img
+              class="head_img swirl"
+              src="../assets/images/Hero Shape Swirl.svg"
+              alt=""
+            />
+            <img
+              class="head_img stars"
+              src="../assets/images/Hero Shape Stars.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="conteiner posts">
+          <div class="about_subtitle2">
+            <img src="../assets/images/Sparkle.png" alt="" />
+            <h4>Latest Posts</h4>
+          </div>
+          <div class="about_menu">
+            <a href="#" class="about_menu_items">All</a
+            ><a href="#" class="about_menu_items">Business</a
+            ><a href="#" class="about_menu_items">News</a
+            ><a href="#" class="about_menu_items">Tips & Trick</a
+            ><a href="#" class="about_menu_items">Podcast</a
+            ><a href="#" class="about_menu_items">Productivity</a>
+          </div>
+          <div class="lines"></div>
+          <div class="about_cards2">
+            <div class="about_card2">
+              <img src="../assets/images/about/img.png" alt="">
+              <h4>PODCAST</h4>
+              <h3>Setup Your Own Podcast</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+              <div class="lines"></div>
+              <div class="about_card_footer">
+                <div class="about_tags">
+                  <div class="about_tag">business</div>
+                  <div class="about_tag">podcast</div>
+                  <div class="about_tag">startup</div>
+                </div>
+                <b>Sep 14, 2021</b>
+              </div>
+            </div>
+            <div class="about_card2">
+              <img src="../assets/images/about/img2.png" alt="">
+              <h4>TIPS & TRICK</h4>
+              <h3>Doodle Artwork 101</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+              <div class="lines"></div>
+              <div class="about_card_footer">
+                <div class="about_tags">
+                  <div class="about_tag">art</div>
+                  <div class="about_tag">tips and trick</div>
+                  <div class="about_tag">creative</div>
+                </div>
+                <b>Sep 14, 2021</b>
+              </div>
+            </div>
+            <div class="about_card2">
+              <img src="../assets/images/about/img3.png" alt="">
+              <h4>NEWS</h4>
+              <h3>Mother Nature Taking Over</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+              <div class="lines"></div>
+              <div class="about_card_footer">
+                <div class="about_tags">
+                  <div class="about_tag">news</div>
+                  <div class="about_tag">nature</div>
+                </div>
+                <b>Sep 14, 2021</b>
+              </div>
+            </div>
+            <div class="about_card2">
+              <img src="../assets/images/about/img4.png" alt="">
+              <h4>PRODUCTIVITY</h4>
+              <h3>How to Be Productive</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+              <div class="lines"></div>
+              <div class="about_card_footer">
+                <div class="about_tags">
+                  <div class="about_tag">productivity</div>
+                  <div class="about_tag">mindset</div>
+                </div>
+                <b>Sep 14, 2021</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="conteiner">
@@ -203,5 +313,10 @@
         </div>
       </div>
     </footer>
+    <a href="#header_conteiner" class="arrow_up"
+      ><img
+        src="../assets/icons/64px-Eo_circle_red_arrow-up.svg.png"
+        alt="arrow"
+    /></a>
   </body>
 </html>

@@ -30,13 +30,13 @@
   display: flex;
   gap: 20px;
   background-color: white;
+  &:hover{
+      box-shadow: 10px 10px 0 #81adc8;
+      .long_card_title{color: red;}
+  }
 }
-.card_shadow {
-  box-shadow: 10px 10px 0 #81adc8;
-}
-.red {
-  color: red;
-}
+
+
 .long_card_img img {
   width: 166px;
   height: 166px;
