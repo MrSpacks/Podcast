@@ -52,8 +52,7 @@
 
 .slide {
  max-width: 373px;
-  display: flex;
-  align-items: center;
+  @include flex-centr;
   justify-content: center;
   width: 100%;
   aspect-ratio: 1 / 1;

@@ -57,10 +57,8 @@
     }
 }
 .about_card_footer {
-    display: flex;
+    @include flex-centr;
     justify-content: space-between;
-    align-items: center;
-
 }
 .about_tags {
     display: flex;

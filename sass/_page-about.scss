@@ -6,6 +6,7 @@
   margin-top: -100px;
 }
 .about_card {
+  @include flex-centr;
   position: relative;
   transform: translateY(50%);
   width: 373px;
@@ -14,10 +15,8 @@
   background-color: white;
   border: solid 1px black;
   border-radius: 8px;
-  display: flex;
   margin: auto;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 10px;
   transition: 0.2s;
@@ -37,7 +36,7 @@
   margin-top: 150px;
 }
 .about_title {
-  font-size: 60px;
+  @include title;
 }
 
 .about_img {
@@ -111,9 +110,8 @@
   }
 }
 .label_footer {
+  @include flex-centr;
   margin-top: 30px;
-  align-items: center;
-  display: flex;
   justify-content: space-between;
 }
 .text_form {

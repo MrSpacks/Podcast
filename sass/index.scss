@@ -3,19 +3,30 @@
 @import "./footer";
 @import "./main-index";
 @import "./slider";
-@import "./episodes"; 
+@import "./episodes";
 @import "./page-about";
 @import "./page_blog";
 @import "./page_digital";
 @import "./page_single_blog";
+
+
+@mixin flex-centr {
+  display: flex;
+  align-items: center;
+}
+@mixin title {
+  font-size: 60px;
+  font-weight: 700;
+}
+@mixin subtitle {
+  font-size: 23px;
+  font-weight: 700;
+}
 :root {
   --main_coloor: #f7ede8;
   --main_font: "Montserrat Alternates", sans-serif;
 }
-.red {
-  color: red;
- 
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +34,7 @@
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 ul,
 li {
@@ -38,8 +49,10 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.arrow_up{
+.red {
+  color: red;
+}
+.arrow_up {
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -47,11 +60,11 @@ a {
   animation: jump 1s infinite;
 }
 @keyframes jump {
-  0%, 100%{
+  0%,
+  100% {
     transform: translateY(0);
-
   }
-  50%{
+  50% {
     transform: translateY(-20px);
   }
 }

@@ -34,15 +34,14 @@
 }
 
 .podcast_texts {
-    gap: 10px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .podcast_text_top {
-  display: flex;
+  @include flex-centr;
   justify-content: space-between;
-  align-items: center;
   h5 {
     font-size: 16px;
   }
@@ -59,20 +58,17 @@
   font-weight: 700;
 }
 .podcast_card_footer {
-  display: flex;
+  @include flex-centr;
   justify-content: space-between;
-  align-items: center;
 }
 .podcast_autor {
   gap: 10px;
-  align-items: center;
-  display: flex;
+  @include flex-centr;
 }
 
 .podcast_btns {
   gap: 20px;
-  display: flex;
-  align-items: center;
+  @include flex-centr;
   justify-content: start;
 }
 
@@ -94,17 +90,15 @@
 }
 // adaptive
 @media (max-width: 1024px) {
-    .display_none{
-        display: none;
-    }
-    .podcast_img{
-        display: none;
-    }
+  .display_none {
+    display: none;
+  }
+  .podcast_img {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
-
 }
 
 @media (max-width: 500px) {
-
 }

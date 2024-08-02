@@ -7,13 +7,11 @@
 
 .title {
   padding: 50px 0 20px 0;
-  font-size: 60px;
-  font-weight: 700;
+  @include title;
 }
 .subtitle {
   padding: 20px 0 50px 0;
-  font-size: 23px;
-  font-weight: 700;
+  @include subtitle;
 }
 .long_cards {
   margin: 0 auto;
@@ -62,8 +60,7 @@
   text-align: start;
 }
 .long_card_title {
-  font-size: 22px;
-  font-weight: 700;
+  @include subtitle;
 }
 .long_card_line {
   width: 100%;
@@ -98,7 +95,7 @@
 @media (max-width: 768px) {
     .title {
   padding: 20px 0 10px 0;
-  font-size: 30px;
+  @include subtitle;
 }
 .long_card_title {
   font-size: 16px;
