@@ -6,12 +6,15 @@
 @import "./episodes"; 
 @import "./page-about";
 @import "./page_blog";
+@import "./page_digital";
+@import "./page_single_blog";
 :root {
   --main_coloor: #f7ede8;
   --main_font: "Montserrat Alternates", sans-serif;
 }
 .red {
   color: red;
+ 
 }
 * {
   padding: 0;
