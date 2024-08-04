@@ -178,7 +178,6 @@
   }
   .form_items {
     grid-template-columns: 1fr;
-
     width: 100%;
   }
 }
@@ -186,5 +185,9 @@
 @media (max-width: 500px) {
   .about_card {
     width: 100%;
+  }
+  .label_footer {
+    flex-direction: column;
+    gap: 10px;
   }
 }
